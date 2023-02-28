@@ -53,12 +53,14 @@ const Stopwatch = () => {
   })
 
   return (
-    <div >
+    
+    <div style={({textAlign:'center',marginTop:'100px' })}>
       <h1>{hour} : {min} : {second} : {mSecond}</h1>
       <button onClick={onStart}>Start</button>
       <button onClick={onStop}>Stop</button>
-      <button onClick={onReset}>Reset</button>
+      <button  onClick={onReset}>Reset</button>
     </div>
+    
   )
 }
 
